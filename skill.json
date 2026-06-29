@@ -1,0 +1,32 @@
+{
+  "name": "multi-agent-system-orchestrator-skill",
+  "description": "Multi-Agent System Orchestrator Skill. Acts as a master coordinator, dispatching and routing task payloads to specialty agent nodes based on intent classifications.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "incoming_task": {
+      "type": "string"
+    },
+    "agent_registry": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "agent_id": { "type": "string" },
+          "specialty": { "type": "string" }
+        },
+        "required": ["agent_id", "specialty"]
+      }
+    }
+  },
+  "outputs": {
+    "dispatch_route": {
+      "type": "object",
+      "properties": {
+        "target_agent_id": { "type": "string" },
+        "confidence": { "type": "number" },
+        "routing_reason": { "type": "string" }
+      }
+    }
+  },
+  "prompt": "You are a master system orchestrator agent. Your job is to classify the intent of {{incoming_task}} and select the best sub-agent from {{agent_registry}} to delegate the execution payload to."
+}
