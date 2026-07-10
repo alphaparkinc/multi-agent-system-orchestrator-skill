@@ -1,4 +1,4 @@
-# multi-agent-system-orchestrator-skill
+# genpark-multi-agent-system-orchestrator-skill
 
 > **GenPark AI Agent Skill** -- # Multi-Agent System Orchestrator Skill
 
