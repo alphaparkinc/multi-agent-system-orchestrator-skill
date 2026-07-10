@@ -1,5 +1,5 @@
 {
-  "name": "multi-agent-system-orchestrator-skill",
+  "name": "genpark-multi-agent-system-orchestrator-skill",
   "description": "GenPark AI Agent Skill - Multi-Agent System Orchestrator Skill. Acts as a master coordinator, dispatching and routing task payloads to specialty agent nodes based on intent classifications.",
   "version": "1.0.0",
   "author": "genpark",
